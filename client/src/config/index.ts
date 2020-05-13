@@ -1,0 +1,1 @@
+export const LIVE_TABLE_SERVER_URL = 'ws://localhost:3001';

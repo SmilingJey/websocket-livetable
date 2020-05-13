@@ -1,0 +1,22 @@
+{
+  "name": "websocket-livetable-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn src/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc"
+  },
+  "author": "SmilingJey <evsyakov@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "7.2.5"
+  },
+  "devDependencies": {
+    "@types/ws": "7.2.4",
+    "nodemon": "2.0.3",
+    "ts-node-dev": "1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  }
+}
