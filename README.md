@@ -1,6 +1,8 @@
 # Websocket Live Table
 Обновление таблицы в реальном времени через websocket
 
+![](image.png)
+
 ## Server
 **Стек:** node.js
 
