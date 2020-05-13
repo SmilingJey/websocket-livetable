@@ -92,6 +92,3 @@ export function* liveTableConnect() {
     yield cancel(socketTask);
   }
 }
-
-//https://gist.github.com/ChristiaanScheermeijer/617ba5f4e97683674a65e6d9723218da
-//https://github.com/slava-lu/saga-socket-example
