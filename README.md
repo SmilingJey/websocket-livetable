@@ -49,7 +49,7 @@ _src\components\live-table\live-table.tsx_ - компонент таблицы
 
 _src\sagas\live-table\live-table.ts_ - асинхронная работа с websocket с применением redux-saga
 
-_src\reducers\live-table\actions.ts_ - функции обновления таблицы в хранилище по полученным от сервера командам
+_src\reducers\live-table\live-table-update.ts_ - функции обновления таблицы в хранилище по полученным от сервера командам
 
 ## Протокол обмена между сервером и клиентом
 После установления соединения клиенту передавать данные на сервер не требуется.
