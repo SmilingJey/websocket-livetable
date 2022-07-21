@@ -1,0 +1,47 @@
+.app {
+  margin-left: 20px;
+}
+
+.app__header {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.app__status {
+  font-weight: bold;
+}
+
+.app__status--online {
+  color: forestgreen;
+}
+
+.app__status--offline {
+  color: crimson;
+}
+
+.app__status--connecting {
+  color: rgb(190, 175, 34);
+}
+
+.app__button {
+  background-color: aliceblue;
+  padding: 5px 20px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.app__button--connect {
+  background-color: rgb(144, 223, 170);
+}
+
+.app__button--disconnect {
+  background-color: rgb(206, 132, 129);
+}
+
+.app__button:disabled {
+  background-color: #bbbaba;
+}

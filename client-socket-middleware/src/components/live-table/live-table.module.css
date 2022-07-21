@@ -1,0 +1,19 @@
+.live-table {
+    width: 400px;
+    table-layout: fixed;
+}
+
+.live-table,
+.live-table__cell {
+    border-collapse: collapse;
+}
+
+.live-table__cell {
+  padding: 5px;
+  border: 1px solid #000000;
+}
+
+.live-table__cell--first-column {
+  width: 30%;
+  text-align: center;
+}
