@@ -9,6 +9,9 @@ import rootReducer from './reducers';
 
 import { socketMiddleware } from './middleware/socket-middleware';
 
+//add to fix https://github.com/reduxjs/redux-thunk/issues/333
+import type {} from 'redux-thunk/extend-redux'
+
 import { 
   connect as LiveTableWsConnect, 
   disconnect as LiveTableWsDisconnect,
@@ -54,8 +57,13 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   AppActions
 >
-
-type Dispatch = <TReturnType>(action: AppActions | AppThunk) => TReturnType;
+/*
+type Dispatch<TReturnType = void> = (action: AppActions | AppThunk) => TReturnType;
 export const useDispatch = () => dispatchHook<Dispatch>();
 export const useSelector: TypedUseSelectorHook<RootState> = selectorHook;
+*/
 
+//fix Thunk typing https://github.com/reduxjs/redux-thunk/issues/333 
+type AppDispatch<TReturnType = void> = (action: AppActions | AppThunk) => TReturnType;
+export const useDispatch: () => AppDispatch = dispatchHook;
+export const useSelector: TypedUseSelectorHook<RootState> = selectorHook;

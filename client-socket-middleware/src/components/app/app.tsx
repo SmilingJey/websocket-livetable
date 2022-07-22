@@ -17,13 +17,13 @@ const App = () => {
   const connect = () => dispatch(connectLiveTable(LIVE_TABLE_SERVER_URL));
   const disconnect = () => dispatch(disconnectLiveTable());
 
-  /*dispatch((dispatch) => {
-    dispatch(connectLiveTable(LIVE_TABLE_SERVER_URL))
+/*
+    dispatch(123)
     dispatch({
       type: "LIVE_TABLE_CONNECT",
       payload: 4563456 //ts проверит тип экшена
     })
-  })*/
+*/
 
   let className = 'app__status';
   switch (status) {
